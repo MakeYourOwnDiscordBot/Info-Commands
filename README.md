@@ -1,4 +1,4 @@
-# Info-Commands
+# Discord-Info-Commands
 Discordサーバー内の情報を表示するコマンド
 
 ## 使用方法
@@ -6,3 +6,37 @@ Discordサーバー内の情報を表示するコマンド
 [これ](https://github.com/MakeYourOwnDiscordBot/main)をセットアップする。
 ### 2.コマンドを使えるようにする。
 `info`フォルダを**直接**`commands`フォルダにドラッグ&ドロップ
+### 3.詳細設定を行う。
+`info`フォルダにある`commandConfig.json`を開く
+```
+
+{
+   "serverCommand":{
+      "aliases":[
+         "server"
+      ],
+      "embedColor":"BLUE",
+      "ownerOnly":false,
+      "userPermissions":[
+         "ADMINISTRATOR"
+      ]
+   },
+   "userCommand":{
+      "aliases":[
+         "user"
+      ],
+      "ownerOnly":true,
+      "userPermissions":[
+         "ADMINISTRATOR"
+      ]
+   },
+   "roleCommand":{
+      "aliases":[
+         "role"
+      ],
+      "ownerOnly":true,
+      "userPermissions":[
+         "ADMINISTRATOR"
+      ]
+   }
+}```
