@@ -8,8 +8,7 @@ Discordサーバー内の情報を表示するコマンド
 `info`フォルダを**直接**`commands`フォルダにドラッグ&ドロップ
 ### 3.詳細設定を行う。
 `info`フォルダにある`commandConfig.json`を開く
-```
-
+```json
 {
    "serverCommand":{
       "aliases":[
