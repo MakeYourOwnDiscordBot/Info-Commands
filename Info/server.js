@@ -24,7 +24,7 @@ module.exports = class ServerCommand extends Command {
       group: 'admin',
       description: 'サーバーの情報を表示',
       ownerOnly: config.serverCommand.ownerOnly,
-      userPermission: config.serverCommand.userPermission
+      userPermissions: config.serverCommand.userPermissions
     });
   }
   
