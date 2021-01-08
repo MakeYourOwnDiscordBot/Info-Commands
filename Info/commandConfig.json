@@ -1,0 +1,8 @@
+{
+  "serverCommand": {
+  "aliases":["server"],
+  "embedColor": "RED",
+  "ownerOnly": true, 
+  "userPermission": ["ADMINISTRATOR"]
+  }
+}
