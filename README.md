@@ -24,9 +24,41 @@ Discordサーバー内の情報を表示するコマンド
 - [x] `ownerOnly` trueの場合、roleコマンドはOWNERS_IDに登録されている人しか使えない
 - [x] `userPermissions` ここに書いてある権限を**全て持っている**人しかroleコマンドを使えない(権限がなくても使えるようにする場合は`[]`にする) | [discordの権限一覧](https://scrapbox.io/discordjs-japan/Discordの権限まとめ)<br><br>
 ### 4.設定具体例
+<details><summary>デフォルト(クリックで展開)</summary>
+  
+デフォルト設定
+```json
+{
+   "serverCommand":{
+      "aliases":[
+         "server"
+      ],
+      "embedColor":"BLUE",
+      "ownerOnly":false,
+      "userPermissions":[]
+   },
+   "userCommand":{
+      "aliases":[
+         "user"
+      ],
+      "ownerOnly":false,
+      "userPermissions": []
+   },
+   "roleCommand":{
+      "aliases":[
+         "role"
+      ],
+      "ownerOnly":false,
+      "userPermissions":[]
+   }
+}
+```
+</details>
+
+
 <details><summary>例1(クリックで展開)</summary>
   
-
+aliasesを増やして簡易的に実行できるようにしてある。(aliasesを増やしすぎると、aliasesが被ってコマンドが二つ実行されてしまうことがあるので注意！)
 ```json
 {
    "serverCommand":{
@@ -56,3 +88,39 @@ Discordサーバー内の情報を表示するコマンド
 </details>
 
 
+<details><summary>例2(クリックで展開)</summary>
+  
+権限強め、`OWNERS_ID`に登録されていてかつ、管理者権限(`ADMINISTRATOR`)を持っていないと実行できない
+```json
+{
+   "serverCommand":{
+      "aliases":[
+         "server"
+      ],
+      "embedColor":"BLUE",
+      "ownerOnly":true,
+      "userPermissions":[
+         "ADMINISTRATOR"
+      ]
+   },
+   "userCommand":{
+      "aliases":[
+         "user"
+      ],
+      "ownerOnly":true,
+      "userPermissions":[
+         "ADMINISTRATOR"
+      ]
+   },
+   "roleCommand":{
+      "aliases":[
+         "role"
+      ],
+      "ownerOnly":true,
+      "userPermissions":[
+         "ADMINISTRATOR"
+      ]
+   }
+}
+```
+</details>
