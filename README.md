@@ -15,6 +15,14 @@ Discordサーバー内の情報を表示するコマンド
 - [ ] `embedColor` serverコマンドを使った時に送信するembed(埋め込み)の色("RED"、"BLUE"、"#ff00ff"など) | [色見本](https://www.colordic.org/)
 - [ ] `ownerOnly` trueの場合、serverコマンドはOWNERS_IDに登録されている人しか使えない
 - [ ] `userPermissions` ここに書いてある権限を**全て持っている**人しかserverコマンドを使えない(権限がなくても使えるようにする場合は`[]`にする) | [discordの権限一覧](https://scrapbox.io/discordjs-japan/Discordの権限まとめ)<br><br>
+##### `userCommand` 指定したユーザーの情報を表示するコマンドの設定
+- [ ] `aliases` userコマンドを実行する文字列(いくつか登録した場合、どれでも使える)
+- [ ] `ownerOnly` trueの場合、userコマンドはOWNERS_IDに登録されている人しか使えない
+- [ ] `userPermissions` ここに書いてある権限を**全て持っている**人しかuserコマンドを使えない(権限がなくても使えるようにする場合は`[]`にする) | [discordの権限一覧](https://scrapbox.io/discordjs-japan/Discordの権限まとめ)<br><br>
+##### `roleCommand` 指定したロールの情報を表示するコマンドの設定 
+- [ ] `aliases` roleコマンドを実行する文字列(いくつか登録した場合、どれでも使える)
+- [ ] `ownerOnly` trueの場合、roleコマンドはOWNERS_IDに登録されている人しか使えない
+- [ ] `userPermissions` ここに書いてある権限を**全て持っている**人しかroleコマンドを使えない(権限がなくても使えるようにする場合は`[]`にする) | [discordの権限一覧](https://scrapbox.io/discordjs-japan/Discordの権限まとめ)<br><br>
 ### 4.設定具体例
 <details><summary>例1(クリックで展開)</summary>
   
