@@ -8,9 +8,9 @@ Discordサーバー内の情報を表示するコマンド
 |ユーザー<br>情報表示|`!user @user`<br>もしくは<br>`!user userID`|ユーザー名、ユーザーID、アカウント作成日時、<br>Botかどうか、ユーザーフラッグ、サーバー入室日時、<br>最高ロール、表示ロール、所持している全てのロール、所持している権限一覧|
 |ロール<br>情報表示|`!role @role`<br>もしくは<br>`!role roleID`|ロール名、ロールカラー(カラーコード)、ロールID、ロール作成日時、<br>役職メンバーの表示の有無、メンション可能かどうか、付随する権限一覧|
 <br>
-
+## 設定方法
 ### 1.このリポジトリは下記リポジトリの拡張機能です。
-[これ](https://github.com/MakeYourOwnDiscordBot/main)をセットアップする。<br><br>
+[これ(main)](https://github.com/MakeYourOwnDiscordBot/main)をセットアップする。<br><br>
 ### 2.コマンドを使えるようにする。
 `info`フォルダを**直接**`commands`フォルダにドラッグ&ドロップ
 ### 3.詳細設定を行う。
