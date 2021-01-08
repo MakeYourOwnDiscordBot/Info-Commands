@@ -5,26 +5,20 @@
       ],
       "embedColor":"BLUE",
       "ownerOnly":false,
-      "userPermissions":[
-         "ADMINISTRATOR"
-      ]
+      "userPermissions":[]
    },
    "userCommand":{
       "aliases":[
          "user"
       ],
-      "ownerOnly":true,
-      "userPermissions":[
-         "ADMINISTRATOR"
-      ]
+      "ownerOnly":false,
+      "userPermissions": []
    },
    "roleCommand":{
       "aliases":[
          "role"
       ],
-      "ownerOnly":true,
-      "userPermissions":[
-         "ADMINISTRATOR"
-      ]
+      "ownerOnly":false,
+      "userPermissions":[]
    }
 }
