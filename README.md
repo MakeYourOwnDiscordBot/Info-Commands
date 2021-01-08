@@ -21,16 +21,16 @@ Discordサーバー内の情報を表示するコマンドを追加する拡張�
 [***設定の具体例***](https://github.com/MakeYourOwnDiscordBot/Info-Commands/blob/main/README.md#4設定具体例)
 ##### `serverCommand` サーバーの情報を表示するコマンドの設定
 - [x] `aliases` serverコマンドを実行する文字列(いくつか登録した場合、どれでも使える)
-- [x] `embedColor` serverコマンドを使った時に送信するembed(埋め込み)の色("RED"、"BLUE"、"#ff00ff"など) | [色見本](https://www.colordic.org/)
-- [x] `ownerOnly` trueの場合、serverコマンドはOWNERS_IDに登録されている人しか使えない
+- [x] `embedColor` serverコマンドを使った時に送信するembed(埋め込み)の色(`"RED"`、`"BLUE"`、`"#ff00ff"`など) | [色見本](https://www.colordic.org/)
+- [x] `ownerOnly` `true`の場合、serverコマンドは`OWNERS_ID`に登録されている人しか使えない
 - [x] `userPermissions` ここに書いてある権限を**全て持っている**人しかserverコマンドを使えない(権限がなくても使えるようにする場合は`[]`にする) | [discordの権限一覧](https://scrapbox.io/discordjs-japan/Discordの権限まとめ)<br><br>
 ##### `userCommand` 指定したユーザーの情報を表示するコマンドの設定
 - [x] `aliases` userコマンドを実行する文字列(いくつか登録した場合、どれでも使える)
-- [x] `ownerOnly` trueの場合、userコマンドはOWNERS_IDに登録されている人しか使えない
+- [x] `ownerOnly` `true`の場合、userコマンドは`OWNERS_ID`に登録されている人しか使えない
 - [x] `userPermissions` ここに書いてある権限を**全て持っている**人しかuserコマンドを使えない(権限がなくても使えるようにする場合は`[]`にする) | [discordの権限一覧](https://scrapbox.io/discordjs-japan/Discordの権限まとめ)<br><br>
 ##### `roleCommand` 指定したロールの情報を表示するコマンドの設定 
 - [x] `aliases` roleコマンドを実行する文字列(いくつか登録した場合、どれでも使える)
-- [x] `ownerOnly` trueの場合、roleコマンドはOWNERS_IDに登録されている人しか使えない
+- [x] `ownerOnly` `true`の場合、roleコマンドは`OWNERS_ID`に登録されている人しか使えない
 - [x] `userPermissions` ここに書いてある権限を**全て持っている**人しかroleコマンドを使えない(権限がなくても使えるようにする場合は`[]`にする) | [discordの権限一覧](https://scrapbox.io/discordjs-japan/Discordの権限まとめ)<br><br>
 ### 4.設定具体例
 <details><summary>デフォルト(クリックで展開)</summary>
