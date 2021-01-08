@@ -9,7 +9,7 @@ Discordサーバー内の情報を表示するコマンド
 ### 3.詳細設定を行う。
 `info`フォルダにある`commandConfig.json`を開く<br>
 以下設定項目と説明<br>
-[設定の具体例]()
+[設定の具体例](https://github.com/MakeYourOwnDiscordBot/Info-Commands/blob/main/README.md#4設定具体例)
 ##### `serverCommand` サーバーの情報を表示するコマンドの設定
 - [ ] `aliases` serverコマンドを実行する文字列(いくつか登録した場合、どれでも使える)
 - [ ] `embedColor` serverコマンドを使った時に送信するembed(埋め込み)の色("RED"、"BLUE"、"#ff00ff"など) | [色見本](https://www.colordic.org/)
