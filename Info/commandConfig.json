@@ -1,8 +1,30 @@
 {
-  "serverCommand": {
-  "aliases":["server"],
-  "embedColor": "RED",
-  "ownerOnly": true, 
-  "userPermission": ["ADMINISTRATOR"]
-  }
+   "serverCommand":{
+      "aliases":[
+         "server"
+      ],
+      "embedColor":"BLUE",
+      "ownerOnly":false,
+      "userPermissions":[
+         "ADMINISTRATOR"
+      ]
+   },
+   "userCommand":{
+      "aliases":[
+         "user"
+      ],
+      "ownerOnly":true,
+      "userPermissions":[
+         "ADMINISTRATOR"
+      ]
+   },
+   "roleCommand":{
+      "aliases":[
+         "role"
+      ],
+      "ownerOnly":true,
+      "userPermissions":[
+         "ADMINISTRATOR"
+      ]
+   }
 }
