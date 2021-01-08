@@ -93,7 +93,7 @@ aliasesを増やして簡易的に実行できるようにしてある。(aliase
 
 <details><summary>例2(クリックで展開)</summary>
   
-権限強め、`OWNERS_ID`に登録されていてかつ、管理者権限(`ADMINISTRATOR`)を持っていないと実行できない
+権限強め、`OWNERS_ID`に登録されていてかつ、管理者権限(`ADMINISTRATOR`)を持っていないと実行できない(あくまで例、この設定にするのはお勧めできない。)
 ```json
 {
    "serverCommand":{
