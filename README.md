@@ -13,7 +13,7 @@ Discordサーバー内の情報を表示するコマンド
 - [ ] `aliases` serverコマンドを実行する文字列(いくつか登録した場合、どれでも使える)
 - [ ] `embedColor` serverコマンドを使った時に送信するembed(埋め込み)の色("RED"、"BLUE"、"#ff00ff"など) | [色見本](https://www.colordic.org/)
 - [ ] `ownerOnly` trueの場合、serverコマンドはOWNERS_IDに登録されている人しか使えない
-- [ ] `userPermissions` ここに書いてある権限を**全て持っている**人しかserverコマンドを使えない(権限がなくても使えるようにする場合は`[]`にする) | [discordの権限一覧](https://scrapbox.io/discordjs-japan/Discordの権限まとめ)
+- [ ] `userPermissions` ここに書いてある権限を**全て持っている**人しかserverコマンドを使えない(権限がなくても使えるようにする場合は`[]`にする) | [discordの権限一覧](https://scrapbox.io/discordjs-japan/Discordの権限まとめ)<br><br>
 ↓例
 ```json
 {
