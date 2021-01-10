@@ -3,18 +3,22 @@
       "aliases":[],
       "embedColor":"BLUE",
       "ownerOnly":false,
-      "userPermissions":[]
+      "cooldown":5,
+      "description": "サーバーの情報を表示",
+      "disabled":false
    },
    "userCommand":{
       "aliases":[],
       "ownerOnly":false,
-      "showPermission":false,
-      "userPermissions":[]
+      "cooldown":5,
+      "description": "ユーザーの情報を取得\n使用方法:!user <@user>\n!user <user ID>",
+      "disabled":false
    },
    "roleCommand":{
       "aliases":[],
       "ownerOnly":false,
-      "showPermission":false,
-      "userPermissions":[]
+      "cooldown":5,
+      "description": "ロール情報を表示\n使用方法: !role <@role>\n!role <role ID>",
+      "disabled":false
    }
 }
