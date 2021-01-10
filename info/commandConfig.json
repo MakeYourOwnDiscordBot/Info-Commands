@@ -1,30 +1,20 @@
 {
    "serverCommand":{
-      "aliases":[
-         "server"
-      ],
+      "aliases":[],
       "embedColor":"BLUE",
-      "ownerOnly":true,
-      "userPermissions":[
-         "ADMINISTRATOR"
-      ]
+      "ownerOnly":false,
+      "userPermissions":[]
    },
    "userCommand":{
-      "aliases":[
-         "user"
-      ],
-      "ownerOnly":true,
-      "userPermissions":[
-         "ADMINISTRATOR"
-      ]
+      "aliases":[],
+      "ownerOnly":false,
+      "showPermission":false,
+      "userPermissions":[]
    },
    "roleCommand":{
-      "aliases":[
-         "role"
-      ],
-      "ownerOnly":true,
-      "userPermissions":[
-         "ADMINISTRATOR"
-      ]
+      "aliases":[],
+      "ownerOnly":false,
+      "showPermission":false,
+      "userPermissions":[]
    }
 }
