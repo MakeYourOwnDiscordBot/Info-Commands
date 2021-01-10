@@ -41,7 +41,7 @@ module.exports = {
 			.addField('アカウント作成日', moment(user.createdAt).tz("Asia/Tokyo").format('MM/DD/YYYY h:mm A'), true)
 			.addField('ID', user.id, true)
 			.addField('Bot?', user.bot ? 'Yes' : 'No', true)
-			.addField('ユーザーフラッグ', userFlags.length ? userFlags.map(flag => flags[flag]).join(', ') : 'None');
+			.addField('ユーザーフラッグ', userFlags.length ? userFlags.map(flag => flags[flag]).join(', ') : 'なし');
 		if (msg.guild) {
 			try {
 				const member = await msg.guild.members.fetch(user.id);
@@ -52,9 +52,9 @@ module.exports = {
 					.map(role => role.name);
 				embed
 					.addField('サーバー入室日', moment(member.joinedAt).tz("Asia/Tokyo").format('MM/DD/YYYY h:mm A'), true)
-					.addField('最高ロール',	member.roles.highest.id === defaultRole.id ? 'None' : `<@&${member.roles.highest.id}>`, true)
-					.addField('表示ロール', member.roles.hoist ? `<@&${member.roles.hoist.id}>` : 'None', true)
-					.addField(`ロール(${roles.length})`,`<@&${msg.guild.member(user)._roles.join('> <@&')}>`||'None')
+					.addField('最高ロール',	member.roles.highest.id === defaultRole.id ? 'なし' : `<@&${member.roles.highest.id}>`, true)
+					.addField('表示ロール', member.roles.hoist ? `<@&${member.roles.hoist.id}>` : 'なし', true)
+					.addField(`ロール(${roles.length})`,roles.length ? `<@&${msg.guild.member(user)._roles.join('> <@&')}>`:'なし')
           .addField(`権限`,member.permissions.toArray())
 					.setColor(member.displayHexColor);
 			} catch {
