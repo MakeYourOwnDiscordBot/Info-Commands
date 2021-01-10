@@ -21,7 +21,7 @@ Discordサーバー内の情報を表示するコマンドを追加する拡張�
 [これ(main)](https://github.com/MakeYourOwnDiscordBot/main)をセットアップする。<br><br>
 ### 2.コマンドを使えるようにする。
 `info`フォルダを**直接**`Extensions`フォルダにドラッグ&ドロップ<br>
-<img src="https://github.com/MakeYourOwnDiscordBot/assets/blob/main/IMAGES/info-folder.png" width=320px>
+<img src="https://github.com/MakeYourOwnDiscordBot/assets/blob/main/IMAGES/info-folder.png" width=160px>
 <br><br>
 ### 3.詳細設定を行う。(デフォルトのままでも使えるし、セキュリティ上の問題も特にない)
 `info`フォルダにある`commandConfig.json`を開く<br>
