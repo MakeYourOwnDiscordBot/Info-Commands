@@ -15,7 +15,7 @@ Discordサーバー内の情報を表示するコマンドを追加する拡張�
 |user|管理者権限を持っている人が<br>コマンドの最後に`true`をつけると権限を表示できる|<img src="https://github.com/MakeYourOwnDiscordBot/assets/blob/main/IMAGES/command-option-user.png" width="320px">|
 |role|管理者権限を持っている人が<br>コマンドの最後に`true`をつけると権限を表示できる|<img src="https://github.com/MakeYourOwnDiscordBot/assets/blob/main/IMAGES/command-option-role.png" width="320px">|
 
-## 設定方法(古いので更新中)
+## 設定方法
 
 ### 1.このリポジトリは下記リポジトリの拡張機能です。
 [これ(main)](https://github.com/MakeYourOwnDiscordBot/main)をセットアップする。<br><br>
