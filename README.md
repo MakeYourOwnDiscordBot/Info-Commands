@@ -36,26 +36,26 @@ Discordサーバー内の情報を表示するコマンドを追加する拡張�
 ```json
 {
    "serverCommand":{
-      "aliases":[
-         "server"
-      ],
+      "aliases":[],
       "embedColor":"BLUE",
       "ownerOnly":false,
-      "userPermissions":[]
+      "cooldown":5,
+      "description": "サーバーの情報を表示",
+      "disabled":false
    },
    "userCommand":{
-      "aliases":[
-         "user"
-      ],
+      "aliases":[],
       "ownerOnly":false,
-      "userPermissions": []
+      "cooldown":5,
+      "description": "ユーザーの情報を取得\n使用方法:!user <@user>\n!user <user ID>",
+      "disabled":false
    },
    "roleCommand":{
-      "aliases":[
-         "role"
-      ],
+      "aliases":[],
       "ownerOnly":false,
-      "userPermissions":[]
+      "cooldown":5,
+      "description": "ロール情報を表示\n使用方法: !role <@role>\n!role <role ID>",
+      "disabled":false
    }
 }
 ```
@@ -68,26 +68,26 @@ aliasesを増やして簡易的に実行できるようにしてある。(aliase
 ```json
 {
    "serverCommand":{
-      "aliases":[  
-         "server","server-info","s"
-      ],
-      "embedColor":"RANDOM", 
-      "ownerOnly":false, 
-      "userPermissions":[]
+      "aliases":["s","server-info"],
+      "embedColor":"RANDOM",
+      "ownerOnly":false,
+      "cooldown":5,
+      "description": "サーバーの情報を表示",
+      "disabled":false
    },
    "userCommand":{
-      "aliases":[
-         "user","user-info","u"
-      ],
+      "aliases":["u","user-info"],
       "ownerOnly":false,
-      "userPermissions":[]
+      "cooldown":5,
+      "description": "ユーザーの情報を取得\n使用方法:!user <@user>\n!user <user ID>",
+      "disabled":false
    },
    "roleCommand":{
-      "aliases":[
-         "role","role-info","r"
-      ],
+      "aliases":["r","role-info"],
       "ownerOnly":false,
-      "userPermissions":[]
+      "cooldown":5,
+      "description": "ロール情報を表示\n使用方法: !role <@role>\n!role <role ID>",
+      "disabled":false
    }
 }
 ```
@@ -96,36 +96,30 @@ aliasesを増やして簡易的に実行できるようにしてある。(aliase
 
 <details><summary>例2(クリックで展開)</summary>
   
-権限強め、`OWNERS_ID`に登録されていてかつ、管理者権限(`ADMINISTRATOR`)を持っていないと実行できない(あくまで例、この設定にするのはお勧めできない。)
+権限強め、botオーナーでないと実行できない(あくまで例、この設定にするのはお勧めできない。)
 ```json
 {
    "serverCommand":{
-      "aliases":[
-         "server"
-      ],
+      "aliases":[],
       "embedColor":"BLUE",
       "ownerOnly":true,
-      "userPermissions":[
-         "ADMINISTRATOR"
-      ]
+      "cooldown":5,
+      "description": "サーバーの情報を表示",
+      "disabled":false
    },
    "userCommand":{
-      "aliases":[
-         "user"
-      ],
+      "aliases":[],
       "ownerOnly":true,
-      "userPermissions":[
-         "ADMINISTRATOR"
-      ]
+      "cooldown":5,
+      "description": "ユーザーの情報を取得\n使用方法:!user <@user>\n!user <user ID>",
+      "disabled":false
    },
    "roleCommand":{
-      "aliases":[
-         "role"
-      ],
+      "aliases":[],
       "ownerOnly":true,
-      "userPermissions":[
-         "ADMINISTRATOR"
-      ]
+      "cooldown":5,
+      "description": "ロール情報を表示\n使用方法: !role <@role>\n!role <role ID>",
+      "disabled":false
    }
 }
 ```
