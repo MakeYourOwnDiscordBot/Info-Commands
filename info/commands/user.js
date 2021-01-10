@@ -20,9 +20,9 @@ const flags = {
 const deprecated = ['DISCORD_PARTNER', 'VERIFIED_DEVELOPER'];
 
 module.exports = {
-      name:'user',
-			aliases: co.aliases,
-			description: 'ユーザーの情報を取得\n使用方法:!user <@user>\n!user <user ID>',
+      	name:'user',
+	aliases: co.aliases,
+	description: 'ユーザーの情報を取得\n使用方法:!user <@user>\n!user <user ID>',
 
 
 	async execute(msg,args,client){
