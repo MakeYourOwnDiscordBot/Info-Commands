@@ -12,15 +12,17 @@ Discordサーバー内の情報を表示するコマンドを追加する拡張�
 ## オプション
 |コマンド|オプション|画像|
 |---|---|---|
-|user|管理者権限を持っている人が、コマンドの最後に`true`をつけると権限を表示できる|<img src="https://github.com/MakeYourOwnDiscordBot/assets/blob/main/IMAGES/command-option-user.png" width="320px">|
-|role|管理者権限を持っている人が、コマンドの最後に`true`をつけると権限を表示できる|<img src="https://github.com/MakeYourOwnDiscordBot/assets/blob/main/IMAGES/command-option-role.png" width="320px">|
+|user|管理者権限を持っている人が<br>コマンドの最後に`true`をつけると権限を表示できる|<img src="https://github.com/MakeYourOwnDiscordBot/assets/blob/main/IMAGES/command-option-user.png" width="320px">|
+|role|管理者権限を持っている人が<br>コマンドの最後に`true`をつけると権限を表示できる|<img src="https://github.com/MakeYourOwnDiscordBot/assets/blob/main/IMAGES/command-option-role.png" width="320px">|
 
 ## 設定方法(古いので更新中)
 
 ### 1.このリポジトリは下記リポジトリの拡張機能です。
 [これ(main)](https://github.com/MakeYourOwnDiscordBot/main)をセットアップする。<br><br>
 ### 2.コマンドを使えるようにする。
-`info`フォルダを**直接**`Extensions`フォルダにドラッグ&ドロップ
+`info`フォルダを**直接**`Extensions`フォルダにドラッグ&ドロップ<br>
+<img src="https://github.com/MakeYourOwnDiscordBot/assets/blob/main/IMAGES/info-folder.png" width=320px>
+<br><br>
 ### 3.詳細設定を行う。(デフォルトのままでも使えるし、セキュリティ上の問題も特にない)
 `info`フォルダにある`commandConfig.json`を開く<br>
 
