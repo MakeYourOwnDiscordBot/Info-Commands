@@ -20,9 +20,9 @@ const flags = {
 const deprecated = ['DISCORD_PARTNER', 'VERIFIED_DEVELOPER'];
 
 module.exports = {
-      	name:'user',
-	aliases: co.aliases,
-	description: 'ユーザーの情報を取得\n使用方法:!user <@user>\n!user <user ID>',
+      name:'user',
+			aliases: co.aliases,
+			description: 'ユーザーの情報を取得\n使用方法:!user <@user>\n!user <user ID>',
 
 
 	async execute(msg,args,client){
@@ -52,11 +52,12 @@ module.exports = {
 					.map(role => role.name);
 				embed
 					.addField('サーバー入室日', moment(member.joinedAt).tz("Asia/Tokyo").format('MM/DD/YYYY h:mm A'), true)
-					.addField('最高ロール',	member.roles.highest.id === defaultRole.id ? 'なし' : `<@&${member.roles.highest.id}>`, true)
+					.addField('最高位ロール',	member.roles.highest.id === defaultRole.id ? 'なし' : `<@&${member.roles.highest.id}>`, true)
 					.addField('表示ロール', member.roles.hoist ? `<@&${member.roles.hoist.id}>` : 'なし', true)
-					.addField(`ロール(${roles.length})`,roles.length ? `<@&${msg.guild.member(user)._roles.join('> <@&')}>`:'なし')
-          .addField(`権限`,member.permissions.toArray())
-					.setColor(member.displayHexColor);
+					.addField(`所持ロール(${roles.length})`,roles.length ? `<@&${msg.guild.member(user)._roles.join('> <@&')}>`:'なし')
+          .setColor(member.displayHexColor);
+          co.showPermission ? embed.addField(`権限`,member.permissions.toArray()) : null
+
 			} catch {
 				embed.setFooter('データの取得中にエラーが発生したようです。エラーが発生しなかった範囲のデータを表示しています。');
 			}
