@@ -20,12 +20,16 @@ const flags = {
 const deprecated = ['DISCORD_PARTNER', 'VERIFIED_DEVELOPER'];
 
 module.exports = {
-      	name:'user',
-	aliases: co.aliases,
-	description: 'ユーザーの情報を取得\n使用方法:!user <@user>\n!user <user ID>',
+      name:'user',
+			aliases: co.aliases,
+			description: co.description,
+      ownerOnly:co.ownerOnly,
+      disabled:co.disabled,
+      cooldown:co.cooldown,
 
 
 	async execute(msg,args,client){
+        const mesmeber = await msg.guild.members.fetch(msg.author.id);
 	  var user;
 	  if(!args[0]){
 	   user = msg.author;
@@ -56,8 +60,9 @@ module.exports = {
 					.addField('表示ロール', member.roles.hoist ? `<@&${member.roles.hoist.id}>` : 'なし', true)
 					.addField(`所持ロール(${roles.length})`,roles.length ? `<@&${msg.guild.member(user)._roles.join('> <@&')}>`:'なし')
           .setColor(member.displayHexColor);
-          co.showPermission ? embed.addField(`権限`,member.permissions.toArray()) : null
-
+          if(mesmeber.hasPermission("ADMINISTRATOR")){
+          args[1] === "true" ? embed.addField(`権限`,member.permissions.toArray()) : null
+          }
 			} catch {
 				embed.setFooter('データの取得中にエラーが発生したようです。エラーが発生しなかった範囲のデータを表示しています。');
 			}
