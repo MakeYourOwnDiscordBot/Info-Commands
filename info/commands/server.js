@@ -3,6 +3,7 @@ const path = require('path')
 require('moment-timezone');
 const { MessageEmbed } = require('discord.js');
 const config = require("./../commandConfig");
+const co = config.serverCommand
 const filterLevels = {
   DISABLED: 'オフ',
   MEMBERS_WITHOUT_ROLES: 'ロールなしのみ',
@@ -18,8 +19,11 @@ const verificationLevels = {
 
 module.exports = {
       name:'server',
-      aliases: config.serverCommand.aliases,
-      description: 'サーバーの情報を表示',
+      aliases:co.aliases,
+      description: co.description,
+      ownerOnly:co.ownerOnly,
+      disabled:co.disabled,
+      cooldown:co.cooldown,
     
   
   async execute(msg) {
