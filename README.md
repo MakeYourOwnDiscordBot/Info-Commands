@@ -44,7 +44,7 @@ Discordサーバー内の情報を表示するコマンドを追加する拡張�
 - [ ] `disabled` **:** `true`にすると、そのコマンドのみ止めることができる。(空欄だと`false`)
 - [x] `ownerOnly` **:** `true`の場合、serverコマンドはbotのオーナーしか使えない<br><br>
 ### 4.設定具体例
-<detals><summary>デフォルト(クリックで展開)</summary>
+<details><summary>デフォルト(クリックで展開)</summary>
   
 デフォルト設定
 ```json
