@@ -5,7 +5,7 @@ Discordサーバー内の情報を表示するコマンドを追加する拡張�
 |追加されるコマンド|使用方法(※設定によって変わります)|表示される情報|
 |---|---|---|
 |サーバー<br>情報表示|`!server`|<img src="https://github.com/MakeYourOwnDiscordBot/assets/blob/main/IMAGES/server-command.png" width="320px">|
-|ユーザー<br>情報表示|`!user @user`<br>もしくは<br>`!user userID`|<img src="https://github.com/MakeYourOwnDiscordBot/assets/blob/main/IMAGES/user-command.png" width="160px">  <img src="https://github.com/MakeYourOwnDiscordBot/assets/blob/main/IMAGES/user-command1.png" width="160px">|
+|ユーザー<br>情報表示|`!user @user`<br>もしくは<br>`!user userID`|<img src="https://github.com/MakeYourOwnDiscordBot/assets/blob/main/IMAGES/user-command.png" width="160px">  <img src="https://github.com/MakeYourOwnDiscordBot/assets/blob/main/IMAGES/user-command1.png" width="160px"><br>オプションで権限表示もできます|
 |ロール<br>情報表示|`!role @role`<br>もしくは<br>`!role roleID`|ロール名、ロールカラー(カラーコード)、ロールID、ロール作成日時、<br>役職メンバーの表示の有無、メンション可能かどうか、付随する権限一覧|
 <br>
 
