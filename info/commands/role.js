@@ -19,7 +19,7 @@ module.exports = {
 			.addField('作成日', moment(role.createdAt).tz("Asia/Tokyo").format('MM/DD/YYYY h:mm A'), true)
 			.addField('表示役職？', role.hoist ? 'Yes' : 'No', true)
 			.addField('メンション可能？', role.mentionable ? 'Yes' : 'No', true)
-      co.showPermission ? embed.addField('権限', role.permissions.toArray()|| 'None') : null;
+      co.showPermission ? embed.addField('権限', role.permissions.toArray()|| 'なし') : null;
 	msg.channel.send(embed);
 	}
 };
