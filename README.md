@@ -9,7 +9,7 @@ Discordサーバー内の情報を表示するコマンドを追加する拡張�
 |ロール<br>情報表示|`!role @role`<br>もしくは<br>`!role roleID`|<img src="https://github.com/MakeYourOwnDiscordBot/assets/blob/main/IMAGES/role-command.png" width="320px"><br>オプションで権限表示もできます|
 <br>
 
-## 設定方法
+## 設定方法(古いので更新中)
 
 ### 1.このリポジトリは下記リポジトリの拡張機能です。
 [これ(main)](https://github.com/MakeYourOwnDiscordBot/main)をセットアップする。<br><br>
