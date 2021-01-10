@@ -19,18 +19,31 @@ Discordサーバー内の情報を表示するコマンドを追加する拡張�
 `info`フォルダにある`commandConfig.json`を開く<br>
 以下設定項目と説明<br>
 [***設定の具体例***](https://github.com/MakeYourOwnDiscordBot/Info-Commands/blob/main/README.md#4設定具体例)
+
+- [ ] 任意の項目(空欄でもいい)
+- [ ] 必須項目
+
 ##### `serverCommand` : サーバーの情報を表示するコマンドの設定
-- [x] `aliases` **:** serverコマンドを実行する文字列(いくつか登録した場合、どれでも使える)
+- [ ] `aliases` **:** serverコマンドを実行する文字列(いくつか登録した場合、どれでも使える)(空欄だと`server`のみに反応)
 - [x] `embedColor` **:** serverコマンドを使った時に送信するembed(埋め込み)の色(`"RED"`、`"BLUE"`、`"#ff00ff"`など) | [色見本](https://www.colordic.org/)
+- [ ] `cooldown` **:** 一度コマンドを使用してからもう一度おなじコマンドが使えるようになるまでの時間。単位は秒。(空欄だと1秒)
+- [ ] `description` **:** コマンドの説明文、[helpコマンド]()を使用したときに表示される。
+- [ ] `disabled` **:** `true`にすると、そのコマンドのみ止めることができる。(空欄だと`false`)
 - [x] `ownerOnly` **:** `true`の場合、serverコマンドはbotのオーナーしか使えない<br><br>
 ##### `userCommand`: 指定したユーザーの情報を表示するコマンドの設定
-- [x] `aliases` **:** userコマンドを実行する文字列(いくつか登録した場合、どれでも使える)
+- [ ] `aliases` **:** userコマンドを実行する文字列(いくつか登録した場合、どれでも使える)(空欄だと`user`のみに反応)
+- [ ] `cooldown` **:** 一度コマンドを使用してからもう一度おなじコマンドが使えるようになるまでの時間。単位は秒。(空欄だと1秒)
+- [ ] `description` **:** コマンドの説明文、[helpコマンド]()を使用したときに表示される。
+- [ ] `disabled` **:** `true`にすると、そのコマンドのみ止めることができる。(空欄だと`false`)
 - [x] `ownerOnly` **:** `true`の場合、serverコマンドはbotのオーナーしか使えない<br><br>
 ##### `roleCommand`: 指定したロールの情報を表示するコマンドの設定 
-- [x] `aliases` **:** roleコマンドを実行する文字列(いくつか登録した場合、どれでも使える)
+- [ ] `aliases` **:** roleコマンドを実行する文字列(いくつか登録した場合、どれでも使える)(空欄だと`role`のみに反応)
+- [ ] `cooldown` **:** 一度コマンドを使用してからもう一度おなじコマンドが使えるようになるまでの時間。単位は秒。(空欄だと1秒)
+- [ ] `description` **:** コマンドの説明文、[helpコマンド]()を使用したときに表示される。
+- [ ] `disabled` **:** `true`にすると、そのコマンドのみ止めることができる。(空欄だと`false`)
 - [x] `ownerOnly` **:** `true`の場合、serverコマンドはbotのオーナーしか使えない<br><br>
 ### 4.設定具体例
-<details><summary>デフォルト(クリックで展開)</summary>
+<detals><summary>デフォルト(クリックで展開)</summary>
   
 デフォルト設定
 ```json
