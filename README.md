@@ -2,7 +2,7 @@
 Discordサーバー内の情報を表示するコマンドを追加する拡張機能
 
 ## 拡張コマンド
-|追加されるコマンド|使用方法(※設定によって変わります)|表示される情報|
+|追加されるコマンド|使用方法(※設定によって変わります)|スクリーンショット|
 |---|---|---|
 |サーバー<br>情報表示|`!server`|<img src="https://github.com/MakeYourOwnDiscordBot/assets/blob/main/IMAGES/server-command.png" width="320px">|
 |ユーザー<br>情報表示|`!user @user`<br>もしくは<br>`!user userID`|<img src="https://github.com/MakeYourOwnDiscordBot/assets/blob/main/IMAGES/user-command.png" width="160px">  <img src="https://github.com/MakeYourOwnDiscordBot/assets/blob/main/IMAGES/user-command1.png" width="160px"><br>オプションで権限表示もできます|
